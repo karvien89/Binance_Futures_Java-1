@@ -862,6 +862,7 @@ class RestApiRequestImpl {
             result.setType(jsonWrapper.getString("type"));
             result.setUpdateTime(jsonWrapper.getLong("updateTime"));
             result.setWorkingType(jsonWrapper.getString("workingType"));
+            result.setAvgPrice(jsonWrapper.getBigDecimal("avgPrice"));
             return result;
         });
         return request;
