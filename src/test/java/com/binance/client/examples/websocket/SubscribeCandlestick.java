@@ -10,7 +10,7 @@ public class SubscribeCandlestick {
         SubscriptionClient client = SubscriptionClient.create();
    
         client.subscribeCandlestickEvent("btcusdt", CandlestickInterval.ONE_MINUTE, ((event) -> {
-            System.out.println(event);
+            //System.out.println(event);
             client.unsubscribeAll();
         }), null);
 

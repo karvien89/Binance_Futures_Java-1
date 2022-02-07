@@ -9,7 +9,7 @@ public class SubscribeDiffDepth {
         SubscriptionClient client = SubscriptionClient.create();
    
         client.subscribeDiffDepthEvent("btcusdt", ((event) -> {
-            System.out.println(event);
+            //System.out.println(event);
             client.unsubscribeAll();
         }), null);
 

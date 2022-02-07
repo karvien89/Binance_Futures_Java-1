@@ -9,7 +9,7 @@ public class SubscribeMarkPrice {
         SubscriptionClient client = SubscriptionClient.create();
    
         client.subscribeMarkPriceEvent("btcusdt", ((event) -> {
-            System.out.println(event);
+            //System.out.println(event);
             client.unsubscribeAll();
         }), null);
 

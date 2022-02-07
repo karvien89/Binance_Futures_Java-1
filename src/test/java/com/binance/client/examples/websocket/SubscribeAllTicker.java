@@ -9,7 +9,7 @@ public class SubscribeAllTicker {
         SubscriptionClient client = SubscriptionClient.create();
    
         client.subscribeAllTickerEvent(((event) -> {
-            System.out.println(event);
+            //System.out.println(event);
             client.unsubscribeAll();
         }), null);
 

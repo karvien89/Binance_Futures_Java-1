@@ -9,7 +9,7 @@ public class SubscribeSymbolMiniTicker {
         SubscriptionClient client = SubscriptionClient.create();
    
         client.subscribeSymbolMiniTickerEvent("btcusdt", ((event) -> {
-            System.out.println(event);
+            //System.out.println(event);
             client.unsubscribeAll();
         }), null);
 

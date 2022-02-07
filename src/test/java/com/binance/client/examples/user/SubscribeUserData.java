@@ -15,7 +15,7 @@ public class SubscribeUserData {
 
         // Start user data stream
         String listenKey = syncRequestClient.startUserDataStream();
-        System.out.println("listenKey: " + listenKey);
+        //System.out.println("listenKey: " + listenKey);
 
         // Keep user data stream
         syncRequestClient.keepUserDataStream(listenKey);

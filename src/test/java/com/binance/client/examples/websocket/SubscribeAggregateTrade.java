@@ -9,7 +9,7 @@ public class SubscribeAggregateTrade {
         SubscriptionClient client = SubscriptionClient.create();
    
         client.subscribeAggregateTradeEvent("btcusdt", ((event) -> {
-            System.out.println(event);
+            //System.out.println(event);
             client.unsubscribeAll();
         }), null);
 

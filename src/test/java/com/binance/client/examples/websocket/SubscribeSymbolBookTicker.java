@@ -9,7 +9,7 @@ public class SubscribeSymbolBookTicker {
         SubscriptionClient client = SubscriptionClient.create();
    
         client.subscribeSymbolBookTickerEvent("btcusdt", ((event) -> {
-            System.out.println(event);
+            //System.out.println(event);
             client.unsubscribeAll();
         }), null);
 

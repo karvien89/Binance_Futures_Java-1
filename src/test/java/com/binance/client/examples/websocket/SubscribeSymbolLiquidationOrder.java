@@ -9,7 +9,7 @@ public class SubscribeSymbolLiquidationOrder {
         SubscriptionClient client = SubscriptionClient.create();
    
         client.subscribeSymbolLiquidationOrderEvent("btcusdt", ((event) -> {
-            System.out.println(event);
+            //System.out.println(event);
             client.unsubscribeAll();
         }), null);
 

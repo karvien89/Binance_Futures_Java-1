@@ -9,7 +9,7 @@ public class SubscribeBookDepth {
         SubscriptionClient client = SubscriptionClient.create();
    
         client.subscribeBookDepthEvent("btcusdt", 5, ((event) -> {
-            System.out.println(event);
+            //System.out.println(event);
             client.unsubscribeAll();
         }), null);
 
